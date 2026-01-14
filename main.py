@@ -18,6 +18,6 @@ def main():
     # counting the chars in the book and prints them in a dict
     char_count = count_char(book_text)
     print(f"{char_count}\n")
-
+    #test 2
 
 main()
