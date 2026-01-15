@@ -4,6 +4,11 @@ def count_words(text):
 
 
 def count_char(text):
-    s = list(text)
-
-    return s
+    tmp_dict = {}
+    for i in text.lower():
+        if i not in tmp_dict:
+            tmp_dict[i] = 1
+        else:
+            tmp_dict[i] += 1
+    del tmp_dict["\ufeff"]
+    return tmp_dict
