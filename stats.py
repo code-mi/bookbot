@@ -10,5 +10,10 @@ def count_char(text):
             tmp_dict[i] = 1
         else:
             tmp_dict[i] += 1
-    del tmp_dict["\ufeff"]
+    if "\ufeff" in tmp_dict:
+        del tmp_dict["\ufeff"]
     return tmp_dict
+
+
+def sort_on(items):
+    return items["num"]
