@@ -24,6 +24,7 @@ def main():
     print("PLACEHOLDER")
     print(char_count)
     print("============= END ===============")
+    # test
 
 
 main()
