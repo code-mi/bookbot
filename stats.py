@@ -15,5 +15,10 @@ def count_char(text):
     return tmp_dict
 
 
-def sort_on(items):
-    return items["num"]
+def sort_me(dictionary):
+    # for x, y in items.items():
+    #    print(x, y)
+    result = dictionary.items()
+    for i in result:
+        print(i)
+    pass
