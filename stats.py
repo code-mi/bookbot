@@ -18,7 +18,8 @@ def count_char(text):
 def sort_me(dictionary):
     # for x, y in items.items():
     #    print(x, y)
-    result = dictionary.items()
-    for i in result:
-        print(i)
-    pass
+    result = list(dictionary)
+    # result.sort(reverse=True)
+    # for i in result:
+    #   print(i)
+    return result
