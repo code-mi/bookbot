@@ -15,15 +15,16 @@ def main():
     word_count = count_words(book_text)
     # counting the chars in the book and prints them in a dict
     char_count = count_char(book_text)
+    sorted = sort_me(char_count)
 
     print("============ BOOKBOT ============")
     print("Analyzing book found at books/frankenstein.txt...")
     print("----------- Word Count ----------")
     print(f"Found {word_count} total words.")
     print("--------- Character Count -------")
-    print("PLACEHOLDER")
-    #    print(sort_me(char_count))
-    print(sort_me(char_count))
+    for i in range(len(sorted)):
+        if sorted[i].get("char").isalpha():
+            print(f"{sorted[i].get('char')}: {sorted[i].get('num')}")
     print("============= END ===============")
 
 

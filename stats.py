@@ -15,11 +15,16 @@ def count_char(text):
     return tmp_dict
 
 
+def sort_on(items):
+    return items["num"]
+
+
 def sort_me(dictionary):
-    # for x, y in items.items():
-    #    print(x, y)
-    result = list(dictionary)
-    # result.sort(reverse=True)
-    # for i in result:
-    #   print(i)
+    result = list()
+    for x, y in dictionary.items():
+        tmp = {}
+        tmp["char"] = x
+        tmp["num"] = y
+        result.append(tmp)
+    result.sort(reverse=True, key=sort_on)
     return result
